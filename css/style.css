@@ -1,0 +1,30 @@
+body{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.blogs{
+    display: flex;
+    background-color: red;
+    /* flex-direction: column-reverse; */
+}
+.blog{
+    padding: 20px;
+    margin: 20px;
+}
+.blog1{
+    background-color: khaki;
+    flex:1;   /* size */
+}
+.blog2{
+    background-color: lightgreen;
+    flex:2;
+}
+.blog3{
+    background-color: mediumorchid;
+    flex:1;
+}
