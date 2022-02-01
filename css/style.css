@@ -10,21 +10,36 @@ h1{
 .blogs{
     display: flex;
     background-color: red;
-    /* flex-direction: column-reverse; */
-}
+    flex-direction: row;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+
+     }
+
 .blog{
     padding: 20px;
     margin: 20px;
+    flex-basis: 150px;
 }
 .blog1{
     background-color: khaki;
-    flex:1;   /* size */
+      /* size */
+     /* order: 1; the smallest goes to the first */
 }
 .blog2{
     background-color: lightgreen;
-    flex:2;
+    
+    /* order:3 */
 }
 .blog3{
     background-color: mediumorchid;
-    flex:1;
+    
+    /* order: 2; */
+}
+
+@media (max-width:760px) {
+    .blogs{
+        flex-direction: column;
+    }
+    
 }
